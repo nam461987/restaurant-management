@@ -1,0 +1,7 @@
+D:\Project\restaurant\Restaurant\Core\bin\Debug\Core.dll.config
+D:\Project\restaurant\Restaurant\Core\bin\Debug\Core.dll
+D:\Project\restaurant\Restaurant\Core\bin\Debug\Core.pdb
+D:\Project\restaurant\Restaurant\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+D:\Project\restaurant\Restaurant\Core\obj\Debug\Core.dll
+D:\Project\restaurant\Restaurant\Core\obj\Debug\Core.pdb
+D:\Project\restaurant\Restaurant\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache

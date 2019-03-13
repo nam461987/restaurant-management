@@ -1,0 +1,6 @@
+D:\Project\restaurant\Restaurant\Admin.ServiceModel\bin\Debug\Admin.ServiceModel.dll
+D:\Project\restaurant\Restaurant\Admin.ServiceModel\bin\Debug\Admin.ServiceModel.pdb
+D:\Project\restaurant\Restaurant\Admin.ServiceModel\obj\Debug\Admin.ServiceModel.csprojResolveAssemblyReference.cache
+D:\Project\restaurant\Restaurant\Admin.ServiceModel\obj\Debug\Admin.ServiceModel.csproj.CoreCompileInputs.cache
+D:\Project\restaurant\Restaurant\Admin.ServiceModel\obj\Debug\Admin.ServiceModel.dll
+D:\Project\restaurant\Restaurant\Admin.ServiceModel\obj\Debug\Admin.ServiceModel.pdb
