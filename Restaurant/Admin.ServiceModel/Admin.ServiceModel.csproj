@@ -43,6 +43,8 @@
     <Compile Include="AjaxRequestData.cs" />
     <Compile Include="common\Option.cs" />
     <Compile Include="Customer_Type_Config.cs" />
+    <Compile Include="Order_Channel_Time_Config.cs" />
+    <Compile Include="Order_Channel_Config.cs" />
     <Compile Include="Menu_Definition_Config.cs" />
     <Compile Include="Menu_Config.cs" />
     <Compile Include="Customer_Config.cs" />

@@ -1427,6 +1427,12 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="modules\order-channel\app.js" />
+    <Content Include="modules\order-channel\config.js" />
+    <Content Include="modules\order-channel\controllers.js" />
+    <Content Include="modules\order-channel\partials\create.html" />
+    <Content Include="modules\order-channel\partials\list.html" />
+    <Content Include="modules\order-channel\services.js" />
     <Content Include="modules\ingredient\app.js" />
     <Content Include="modules\ingredient\config.js" />
     <Content Include="modules\ingredient\controllers.js" />
@@ -1992,6 +1998,7 @@
     <Content Include="Views\Category\Menu.cshtml" />
     <Content Include="Views\Customer\Customer.cshtml" />
     <Content Include="Views\Category\Ingredient.cshtml" />
+    <Content Include="Views\Category\Order_Channel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

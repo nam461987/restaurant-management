@@ -959,6 +959,120 @@ namespace RestaurantNS
 
     
 
+	[TableName("namto.Order_Channel")]
+
+
+
+	[PrimaryKey("Id")]
+
+
+
+
+	[ExplicitColumns]
+
+    public partial class Order_Channel : RestaurantRepo.Record<Order_Channel>  
+    {
+
+
+
+		[Column] public int Id { get; set; }
+
+
+
+
+
+		[Column] public int RestaurantId { get; set; }
+
+
+
+
+
+		[Column] public int? BranchId { get; set; }
+
+
+
+
+
+		[Column] public string Name { get; set; }
+
+
+
+
+
+		[Column] public string Description { get; set; }
+
+
+
+
+
+		[Column] public int? Status { get; set; }
+
+
+
+	}
+
+    
+
+	[TableName("namto.Order_Channel_Time")]
+
+
+
+	[PrimaryKey("Id")]
+
+
+
+
+	[ExplicitColumns]
+
+    public partial class Order_Channel_Time : RestaurantRepo.Record<Order_Channel_Time>  
+    {
+
+
+
+		[Column] public int Id { get; set; }
+
+
+
+
+
+		[Column] public int RestaurantId { get; set; }
+
+
+
+
+
+		[Column] public int BranchId { get; set; }
+
+
+
+
+
+		[Column] public int OrderChannelId { get; set; }
+
+
+
+
+
+		[Column] public string OpenTime { get; set; }
+
+
+
+
+
+		[Column] public string CloseTime { get; set; }
+
+
+
+
+
+		[Column] public int? Status { get; set; }
+
+
+
+	}
+
+    
+
 	[TableName("namto.Restaurant")]
 
 

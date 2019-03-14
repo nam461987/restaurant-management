@@ -102,6 +102,12 @@
                                     <a href="@Url.Action("Ingredient", "Category")">Ingredient</a>
                                 </li>
                             }
+                            @if (WebsiteExtension.CheckPermission("category_order_channel_list"))
+                            {
+                                <li>
+                                    <a href="@Url.Action("Order_Channel", "Category")">Order Channel</a>
+                                </li>
+                            }
                         </ul>
                     </li>
                 }

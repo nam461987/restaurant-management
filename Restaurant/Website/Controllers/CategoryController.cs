@@ -58,6 +58,16 @@ namespace Admin.Controllers
         {
             return View();
         }
+        [HasCredential(Role = "category_order_channel_list")]
+        public ActionResult Order_Channel()
+        {
+            return View();
+        }
+        [HasCredential(Role = "category_order_channel_time_list")]
+        public ActionResult Order_Channel_Time()
+        {
+            return View();
+        }
 
         // Restaurant
         [HasCredential(Role = "category_restaurant_list")]
@@ -427,6 +437,87 @@ namespace Admin.Controllers
         public JsonResult GetIngredientList()
         {
             var result = IngredientService.GetIngredientList(Constants.RestaurantId, Constants.BranchId);
+
+            return Json(result);
+        }
+        //---------------------------------------------------------------------
+
+        // Order_Channel
+        [HasCredential(Role = "category_order_channel_list")]
+        [HttpPost]
+        public JsonResult GetAllOrder_Channel(DataModel obj)
+        {
+            var result = Order_ChannelService.GetAllOrder_Channel(obj, Constants.RestaurantId, Constants.BranchId);
+
+            return Json(result);
+        }
+        [HasCredential(Role = "category_order_channel_create")]
+        [HttpPost]
+        public JsonResult InsertOrder_Channel(Order_Channel md)
+        {
+            md.RestaurantId = md.RestaurantId != 0 ? md.RestaurantId : Constants.RestaurantId;
+            md.BranchId = md.BranchId != 0 ? md.BranchId : Constants.BranchId;
+            var result = Order_ChannelService.InsertOrder_Channel(md);
+
+            return Json(result);
+        }
+        [HasCredential(Role = "category_order_channel_update")]
+        [HttpPost]
+        public JsonResult UpdateOrder_Channel(Order_Channel md)
+        {
+            var result = Order_ChannelService.UpdateOrder_Channel(md);
+
+            return Json(result);
+        }
+        [HasCredential(Role = "category_order_channel_delete")]
+        [HttpPost]
+        public JsonResult DeleteOrder_Channel(int id, int status)
+        {
+            var result = Order_ChannelService.DeleteOrder_Channel(id, status);
+
+            return Json(result);
+        }
+        [HasCredential(Role = "category_order_channel_list")]
+        public JsonResult GetOrder_ChannelList()
+        {
+            var result = Order_ChannelService.GetOrder_ChannelList(Constants.RestaurantId, Constants.BranchId);
+
+            return Json(result);
+        }
+        //---------------------------------------------------------------------
+
+        // Order_Channel_Time
+        [HasCredential(Role = "category_order_channel_time_list")]
+        [HttpPost]
+        public JsonResult GetAllOrder_Channel_Time(DataModel obj)
+        {
+            var result = Order_Channel_TimeService.GetAllOrder_Channel_Time(obj, Constants.RestaurantId, Constants.BranchId);
+
+            return Json(result);
+        }
+        [HasCredential(Role = "category_order_channel_time_create")]
+        [HttpPost]
+        public JsonResult InsertOrder_Channel_Time(Order_Channel_Time md)
+        {
+            md.RestaurantId = md.RestaurantId != 0 ? md.RestaurantId : Constants.RestaurantId;
+            md.BranchId = md.BranchId != 0 ? md.BranchId : Constants.BranchId;
+            var result = Order_Channel_TimeService.InsertOrder_Channel_Time(md);
+
+            return Json(result);
+        }
+        [HasCredential(Role = "category_order_channel_time_update")]
+        [HttpPost]
+        public JsonResult UpdateOrder_Channel_Time(Order_Channel_Time md)
+        {
+            var result = Order_Channel_TimeService.UpdateOrder_Channel_Time(md);
+
+            return Json(result);
+        }
+        [HasCredential(Role = "category_order_channel_time_delete")]
+        [HttpPost]
+        public JsonResult DeleteOrder_Channel_Time(int id, int status)
+        {
+            var result = Order_Channel_TimeService.DeleteOrder_Channel_Time(id, status);
 
             return Json(result);
         }

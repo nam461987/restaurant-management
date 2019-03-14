@@ -88,6 +88,8 @@
     <Compile Include="AdminService.cs" />
     <Compile Include="global\Global.cs" />
     <Compile Include="Customer_TypeService.cs" />
+    <Compile Include="Order_Channel_Time_Service.cs" />
+    <Compile Include="Order_ChannelService.cs" />
     <Compile Include="Menu_DefinitionService.cs" />
     <Compile Include="MenuService.cs" />
     <Compile Include="CustomerService.cs" />
